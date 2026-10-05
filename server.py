@@ -4,7 +4,7 @@ server.py
 
 An MCP (Model Context Protocol) server that exposes the same two tools
 used by the RAG + tool-routing agent (github.com/SantoshpHiremath/rag-tool-agent-demo,
-already wrapped as a Flask API in ../rag-tool-api-docker/) as proper MCP
+already wrapped as a Flask API in ../rag-tool-api/) as proper MCP
 tools, callable by any MCP-compatible client (Claude Desktop, an
 MCP-aware agent harness, etc.) instead of only through that project's own
 CLI or HTTP interface.
@@ -23,7 +23,7 @@ Two tools:
 
 - search_notes(query: str) -> str
     Retrieval-style lookup. Mirrors the retrieval branch of the original
-    agent (and of StubAgentRunner in rag-tool-api-docker/agent_runner.py):
+    agent (and of StubAgentRunner in rag-tool-api/agent_runner.py):
     grounded answers about the FordA dataset notes, returned with the
     same "[Grounded in N retrieved chunk(s) from ...]" provenance suffix
     the original agent uses, so a client can tell a grounded answer from

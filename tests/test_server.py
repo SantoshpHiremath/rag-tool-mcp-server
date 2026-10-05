@@ -5,7 +5,7 @@ FastMCP tools are plain Python functions wrapped by the @mcp.tool()
 decorator; the original, uncorrected function is reachable via `.fn`, so
 these tests call the real tool logic directly with no MCP client, no
 transport, and no network involved — the same "test the real logic
-through its real interface" approach used in rag-tool-api-docker's own
+through its real interface" approach used in rag-tool-api's own
 test suite.
 """
 

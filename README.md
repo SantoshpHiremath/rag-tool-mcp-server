@@ -7,7 +7,7 @@ arithmetic calculator) as a [Model Context
 Protocol](https://modelcontextprotocol.io) server, so any MCP-compatible
 client (Claude Desktop, an MCP-aware agent harness, or a custom host) can
 call them directly instead of only through that project's own CLI or through
-the Flask HTTP wrapper in [`rag-tool-api-docker`](../rag-tool-api-docker/).
+the Flask HTTP wrapper in [`rag-tool-api`](https://github.com/SantoshpHiremath/rag-tool-api).
 
 ## What it does
 
@@ -94,7 +94,7 @@ invocation over real MCP.
 - [`rag-tool-agent-demo`](https://github.com/SantoshpHiremath/rag-tool-agent-demo) —
   the original CLI agent: LangChain, FAISS, Ollama, LCEL retrieval chain,
   calculator tool, LLM-driven routing.
-- [`rag-tool-api-docker`](../rag-tool-api-docker/) — that agent wrapped as
+- [`rag-tool-api`](https://github.com/SantoshpHiremath/rag-tool-api) — that agent wrapped as
   a Flask HTTP API, containerized (Docker, multi-stage build, non-root
   user, health check), verified with real HTTP requests against a running
   container.
